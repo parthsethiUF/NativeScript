@@ -2,8 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\conFusion",
-    "\\conFusion\\.vscode"
+    "\\conFusion\\app",
+    "\\conFusion\\app\\aboutus",
+    "\\conFusion\\app\\contact",
+    "\\conFusion\\app\\dishdetail",
+    "\\conFusion\\app\\home",
+    "\\conFusion\\app\\menu",
+    "\\conFusion\\app\\shared\\drawer"
   ],
-  "SelectedNode": "\\conFusion\\.vscode\\settings.json",
+  "SelectedNode": "\\conFusion\\app\\menu\\menu.component.ts",
   "PreviewInSolutionExplorer": false
 }
