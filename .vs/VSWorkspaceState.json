@@ -7,8 +7,7 @@
     "\\conFusion\\app\\contact",
     "\\conFusion\\app\\dishdetail",
     "\\conFusion\\app\\home",
-    "\\conFusion\\app\\menu",
-    "\\conFusion\\app\\shared\\drawer"
+    "\\conFusion\\app\\menu"
   ],
   "SelectedNode": "\\conFusion\\app\\menu\\menu.component.ts",
   "PreviewInSolutionExplorer": false
