@@ -7,6 +7,9 @@ import { NativeScriptHttpModule } from "nativescript-angular/http";
 import { NativeScriptUISideDrawerModule } from "nativescript-ui-sidedrawer/angular";
 import { TNSFontIconModule } from 'nativescript-ngx-fonticon';
 import { NativeScriptUIListViewModule } from "nativescript-ui-listview/angular";
+import { NativeScriptFormsModule } from "nativescript-angular/forms";
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 
 import { MenuComponent } from './menu/menu.component';
@@ -15,6 +18,9 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { FavoritesComponent } from './favorites/favorites.component';
+import { ReservationComponent } from './reservation/reservation.component';
+import { ReservationModalComponent } from "./reservationmodal/reservationmodal.component";
+import { CommentModalComponent } from "./comment/comment.component";
 
 import { DishService } from './services/dish.service';
 import { ProcessHTTPMsgService } from './services/process-httpmsg.service';
@@ -41,6 +47,8 @@ import { baseURL } from './shared/baseurl';
         HttpClientModule,
         NativeScriptUISideDrawerModule,
         NativeScriptUIListViewModule,
+        NativeScriptFormsModule,
+        ReactiveFormsModule,
         TNSFontIconModule.forRoot({
     			'fa': './fonts/font-awesome.min.css'
     		})
@@ -52,7 +60,10 @@ import { baseURL } from './shared/baseurl';
         HomeComponent,
         ContactComponent,
         AboutusComponent,
-        FavoritesComponent
+        FavoritesComponent,
+        ReservationComponent,
+        ReservationModalComponent,
+        CommentModalComponent
     ],
     providers: [
         { provide: 'baseURL', useValue: baseURL },
@@ -61,6 +72,10 @@ import { baseURL } from './shared/baseurl';
         PromotionService,
         LeaderService,
         FavoriteService
+    ],
+    entryComponents: [
+        ReservationModalComponent,
+        CommentModalComponent
     ],
     schemas: [
         NO_ERRORS_SCHEMA

@@ -5,10 +5,12 @@
     "\\conFusion\\app",
     "\\conFusion\\app\\aboutus",
     "\\conFusion\\app\\contact",
-    "\\conFusion\\app\\dishdetail",
-    "\\conFusion\\app\\home",
-    "\\conFusion\\app\\menu"
+    "\\conFusion\\app\\favorites",
+    "\\conFusion\\app\\fonts",
+    "\\conFusion\\app\\images",
+    "\\conFusion\\app\\services",
+    "\\conFusion\\app\\shared"
   ],
-  "SelectedNode": "\\conFusion\\app\\menu\\menu.component.ts",
+  "SelectedNode": "\\conFusion\\app\\favorites\\favorites.component.ts",
   "PreviewInSolutionExplorer": false
 }

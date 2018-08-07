@@ -1,0 +1,14 @@
+<GridLayout rows="auto auto auto auto auto" columns="auto auto" class="modal-view-style" [formGroup]="comment">
+    <Label class="m-5 h3" row="0" col="0" text="Your Name" textWrap="true"></Label>
+    <TextField class="input input-border" id="author" hint="What's your name?" [text]=''
+               row="0" col="1" formControlName="author"></TextField>
+
+    <Label class="m-5 h3" row="1" col="0" text="Rating" textWrap="true"></Label>
+    <Slider row="1" col="1" formControlName="rating" value="5" minValue="1" maxValue="5" step="1"></Slider>
+
+    <Label class="m-5 h3" row="2" col="0" text="Comment" textWrap="true"></Label>
+    <TextField class="input input-border" id="comment" hint="Add your comment here..." [text]=''
+               row="2" col="1" formControlName="comment"></TextField>
+    <Button row="3" col="0" class="btn btn-primary btn-active" text="submit"
+            (tap)="submitComment(comment)"></Button>
+</GridLayout>
