@@ -7,13 +7,17 @@ import { DishdetailComponent } from './dishdetail/dishdetail.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
+import { FavoritesComponent } from './favorites/favorites.component';
+
+
 const routes: Routes = [
     { path: "", redirectTo: "/home", pathMatch: "full" },
     { path: "home", component: HomeComponent },
     { path: "aboutus", component: AboutusComponent },
     { path: "menu", component: MenuComponent },
     { path: "contact", component: ContactComponent },
-    { path: 'dishdetail/:id', component: DishdetailComponent }
+    { path: 'dishdetail/:id', component: DishdetailComponent },
+    { path: "favorites", component: FavoritesComponent }
 ];
 
 @NgModule({
