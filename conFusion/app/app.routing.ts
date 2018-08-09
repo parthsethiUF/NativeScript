@@ -9,9 +9,11 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { FavoritesComponent } from './favorites/favorites.component';
 import { ReservationComponent } from './reservation/reservation.component';
+import { UserAuthComponent } from "./userauth/userauth.component"; 
 
 const routes: Routes = [
     { path: "", redirectTo: "/home", pathMatch: "full" },
+    { path: "auth", component: UserAuthComponent }, 
     { path: "home", component: HomeComponent },
     { path: "aboutus", component: AboutusComponent },
     { path: "menu", component: MenuComponent },
@@ -19,6 +21,7 @@ const routes: Routes = [
     { path: 'dishdetail/:id', component: DishdetailComponent },
     { path: "favorites", component: FavoritesComponent },
     { path: "reservation", component: ReservationComponent },
+    
 ];
 
 @NgModule({

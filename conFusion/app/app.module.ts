@@ -21,6 +21,8 @@ import { FavoritesComponent } from './favorites/favorites.component';
 import { ReservationComponent } from './reservation/reservation.component';
 import { ReservationModalComponent } from "./reservationmodal/reservationmodal.component";
 import { CommentModalComponent } from "./comment/comment.component";
+import { UserAuthComponent } from "./userauth/userauth.component"; 
+
 
 import { DishService } from './services/dish.service';
 import { ProcessHTTPMsgService } from './services/process-httpmsg.service';
@@ -64,7 +66,8 @@ import { baseURL } from './shared/baseurl';
         FavoritesComponent,
         ReservationComponent,
         ReservationModalComponent,
-        CommentModalComponent
+        CommentModalComponent,
+        UserAuthComponent 
     ],
     providers: [
         { provide: 'baseURL', useValue: baseURL },
