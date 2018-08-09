@@ -12,6 +12,9 @@ import { View } from "ui/core/view";
 import { SwipeGestureEventData, SwipeDirection } from "ui/gestures";
 import * as enums from "ui/enums";
 
+import * as app from "application";
+import { RadSideDrawer } from "nativescript-ui-sidedrawer";
+
 @Component({
     selector: 'app-home',
     moduleId: module.id,
@@ -61,6 +64,11 @@ export class HomeComponent implements OnInit {
         else if (args.direction === SwipeDirection.right) {
             this.animateRight();
         }
+    }
+
+    onDrawerButtonTap(): void {
+        const sideDrawer = <RadSideDrawer>app.getRootView();
+        sideDrawer.showDrawer();
     }
 
     animateLeft() {

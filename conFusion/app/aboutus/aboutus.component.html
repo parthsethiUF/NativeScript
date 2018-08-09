@@ -1,5 +1,13 @@
 <ActionBar title="About Us" class="action-bar">
-    <NavigationButton text="Menu" icon="res://ic_drawer" (tap)="openDrawer()"></NavigationButton>
+    <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()"></NavigationButton>
+    <!--
+    Use the ActionItem for IOS with position set to left. Using the
+    NavigationButton as a side-drawer button in iOS is not possible,
+    because its function is to always navigate back in the application.
+    -->
+    <ActionItem icon="res://menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"
+                ios.position="left">
+    </ActionItem>
 </ActionBar>
     <StackLayout tkMainContent class="noborder">
         <StackLayout row="0" class="p-10 m-15 border">

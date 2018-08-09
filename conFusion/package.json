@@ -6,7 +6,7 @@
 	"nativescript": {
 		"id": "org.nativescript.conFusion",
 		"tns-ios": {
-			"version": "4.1.0"
+			"version": "4.1.1"
 		},
 		"tns-android": {
 			"version": "4.1.3"

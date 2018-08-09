@@ -6,7 +6,8 @@ import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { ModalDialogService, ModalDialogOptions } from "nativescript-angular/modal-dialog";
 import { ReservationModalComponent } from "../reservationmodal/reservationmodal.component";
 
-
+import * as app from "application";
+import { RadSideDrawer } from "nativescript-ui-sidedrawer";
 @Component({
     selector: 'app-reservation',
     moduleId: module.id,
@@ -26,6 +27,11 @@ export class ReservationComponent implements OnInit {
             smoking: false,
             dateTime: ['', Validators.required]
         });
+    }
+
+    onDrawerButtonTap(): void {
+        const sideDrawer = <RadSideDrawer>app.getRootView();
+        sideDrawer.showDrawer();
     }
 
     ngOnInit() {
