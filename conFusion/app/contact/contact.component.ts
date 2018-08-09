@@ -3,6 +3,8 @@ import * as app from "application";
 import { RadSideDrawer } from "nativescript-ui-sidedrawer";
 import { TNSFontIconService } from 'nativescript-ngx-fonticon';
 import * as Email from 'nativescript-email';
+import * as TNSPhone from 'nativescript-phone';
+
 @Component({
     selector: 'app-contact',
     moduleId: module.id,
@@ -20,7 +22,13 @@ export class ContactComponent implements OnInit {
     ngOnInit() {
 
     }
-    sendEmail() {
+    
+    callHome() {
+        console.log("calling");
+        TNSPhone.dial('999-999-9999', true);
+    }
+
+    sendMail() {
 
         Email.available()
             .then((avail: boolean) => {

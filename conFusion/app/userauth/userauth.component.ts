@@ -7,6 +7,7 @@ import * as camera from 'nativescript-camera';
 import { Image } from 'ui/image';
 import * as app from "application";
 import { RadSideDrawer } from "nativescript-ui-sidedrawer";
+import * as imagepicker from "nativescript-imagepicker";
 
 @Component({
     moduleId: module.id,
@@ -56,6 +57,27 @@ export class UserAuthComponent implements OnInit {
                 .catch((err) => console.log('Error -> ' + err.message));
         }
 
+    }
+
+    selectPicture() {
+        let image = <Image>this.page.getViewById<Image>('myPicture');
+        let context = imagepicker.create({
+            mode: "single" // use "multiple" for multiple selection
+        });
+
+        context
+            .authorize()
+            .then(function () {
+                return context.present();
+            })
+            .then(function (selection) {
+                selection.forEach(selected => {
+                    image.src = selected;
+
+                }
+                    // process the selected image
+                );
+            }).catch(e => console.log('Error -> ' + e.message));
     }
 
     register() {
