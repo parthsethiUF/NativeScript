@@ -4,13 +4,13 @@
     "\\conFusion",
     "\\conFusion\\app",
     "\\conFusion\\app\\aboutus",
+    "\\conFusion\\app\\comment",
     "\\conFusion\\app\\contact",
+    "\\conFusion\\app\\dishdetail",
     "\\conFusion\\app\\favorites",
-    "\\conFusion\\app\\fonts",
-    "\\conFusion\\app\\images",
-    "\\conFusion\\app\\services",
+    "\\conFusion\\app\\menu",
     "\\conFusion\\app\\shared"
   ],
-  "SelectedNode": "\\conFusion\\app\\favorites\\favorites.component.ts",
+  "SelectedNode": "\\conFusion\\app\\app.module.ts",
   "PreviewInSolutionExplorer": false
 }

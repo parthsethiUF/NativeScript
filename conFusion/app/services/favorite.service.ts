@@ -5,7 +5,6 @@ import { Observable, throwError } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { CouchbaseService } from '../services/couchbase.service';
 
-
 @Injectable()
 export class FavoriteService {
 
@@ -13,9 +12,7 @@ export class FavoriteService {
     docId: string = "favorites";
     constructor(private dishservice: DishService,
         private couchbaseService: CouchbaseService) {
-
         this.favorites = [];
-
         let doc = this.couchbaseService.getDocument(this.docId);
         if (doc == null) {
             this.couchbaseService.createDocument({ "favorites": [] }, this.docId);
