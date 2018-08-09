@@ -131,7 +131,7 @@ export class DishdetailComponent implements OnInit {
         }
 
     }
-
+    
     showAndHideComments() {
         this.cardImage = <View>this.page.getViewById<View>("cardImage");
         this.cardLayout = <View>this.page.getViewById<View>("cardLayout");

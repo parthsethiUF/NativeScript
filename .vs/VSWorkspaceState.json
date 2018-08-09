@@ -3,14 +3,14 @@
     "",
     "\\conFusion",
     "\\conFusion\\app",
-    "\\conFusion\\app\\aboutus",
-    "\\conFusion\\app\\comment",
-    "\\conFusion\\app\\contact",
-    "\\conFusion\\app\\dishdetail",
-    "\\conFusion\\app\\favorites",
-    "\\conFusion\\app\\menu",
-    "\\conFusion\\app\\shared"
+    "\\conFusion\\app\\App_Resources\\Android",
+    "\\conFusion\\app\\App_Resources\\Android\\src",
+    "\\conFusion\\app\\App_Resources\\Android\\src\\main",
+    "\\conFusion\\app\\App_Resources\\Android\\src\\main\\res",
+    "\\conFusion\\app\\home",
+    "\\conFusion\\app\\reservation",
+    "\\conFusion\\app\\services"
   ],
-  "SelectedNode": "\\conFusion\\app\\app.module.ts",
+  "SelectedNode": "\\conFusion\\app\\reservation\\reservation.component.ts",
   "PreviewInSolutionExplorer": false
 }
