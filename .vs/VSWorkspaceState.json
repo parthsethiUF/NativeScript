@@ -3,14 +3,13 @@
     "",
     "\\conFusion",
     "\\conFusion\\app",
-    "\\conFusion\\app\\App_Resources\\Android",
-    "\\conFusion\\app\\App_Resources\\Android\\src",
-    "\\conFusion\\app\\App_Resources\\Android\\src\\main",
-    "\\conFusion\\app\\App_Resources\\Android\\src\\main\\res",
+    "\\conFusion\\app\\contact",
+    "\\conFusion\\app\\dishdetail",
     "\\conFusion\\app\\home",
     "\\conFusion\\app\\reservation",
-    "\\conFusion\\app\\services"
+    "\\conFusion\\app\\services",
+    "\\conFusion\\app\\userauth"
   ],
-  "SelectedNode": "\\conFusion\\app\\reservation\\reservation.component.ts",
+  "SelectedNode": "\\conFusion\\app\\userauth\\userauth.component.html",
   "PreviewInSolutionExplorer": false
 }
